@@ -27,7 +27,7 @@ const Signup = () => {
     console.log(input);
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/register",
+        "https://instaclone-7ums.onrender.com/api/v1/user/register",
         input,
         {
           headers: {

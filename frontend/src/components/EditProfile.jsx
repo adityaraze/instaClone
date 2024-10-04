@@ -53,7 +53,7 @@ const EditProfile = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/profile/edit",
+        "https://instaclone-7ums.onrender.com/api/v1/user/profile/edit",
         formData,
         {
           withCredentials: true, // Important for session handling
