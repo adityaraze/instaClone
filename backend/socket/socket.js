@@ -5,6 +5,7 @@ const http = require("http");
 const app = express();
 const server = http.createServer(app);
 require("dotenv").config();
+console.log(process.env.URL);
 const io = new Server(server, {
     cors: {
         origin: process.env.URL,
