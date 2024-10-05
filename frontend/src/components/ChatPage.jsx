@@ -146,7 +146,7 @@ const ChatPage = () => {
                             const isOnline = onlineUsers.includes(suggestedUser?._id);
                             return (
                                 <div onClick={() => dispatch(setSelectedUser(suggestedUser))} className='flex gap-3 items-center p-3 hover:bg-gray-50 cursor-pointer'>
-                                    <Avatar className='w-14 h-14'>
+                                    <Avatar className='w-14 h-14 rounded-full'>
                                         <AvatarImage src={suggestedUser?.profilePicture} />
                                         <AvatarFallback>CN</AvatarFallback>
                                     </Avatar>
